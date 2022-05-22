@@ -1,4 +1,8 @@
-/* stylesheet for all but the site plan */
+/* stylesheet for website */
+
+/* Raleway, Gloria Hallelujah */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Raleway&display=swap');
+
 
 #content {
     max-width: 1600px;
@@ -17,15 +21,30 @@
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 #background {
     background-color: #00B7F0;
     height: 725px;
 }
 h2 {
     color: white;
+    margin: 0;
 }
 body {
     background-color: #374B8A;
+    font-family: Raleway, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.home-title{
+    font-family: "Gloria Hallelujah", Hallelujah, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.join {
+    font-family: "Gloria Hallelujah", Hallelujah, sans-serif;
 }
 header {
     background-color: #00B7F0;
@@ -34,14 +53,19 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
-
+    padding: 35px;
 }
 nav a:hover {
     background-color: #133CBD;
 }
 .book, .join {
+    background-color: #1976ac;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #133CBD;
@@ -49,13 +73,22 @@ nav a:hover {
 }
 .msg {
     background-color: #00B7F0;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.msg h2 {
+    font-family: "Gloria Hallelujah", Hallelujah, sans-serif;
 }
 .msg p {
     font-size: 1.1em;
-    color: #133CBD;
+    color: black;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #374B8A;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer h3 {
     color: white;
@@ -68,9 +101,21 @@ footer h3 a:hover{
     color: white;
     text-decoration: underline;
 }
+footer .social img {
+    padding-top: 15px;
+}
 .icon {
     width: 80px;
 }
 #hero-img {
     width: 100%
+}
+#logo_link {
+    padding-top: 5px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0 ;
+}
+.card-img {
+    border: 10px solid #133CBD;
 }
