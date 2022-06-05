@@ -196,6 +196,8 @@ footer .social img {
 }
 
 
+/* If the screen is smaller than 900px */
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
