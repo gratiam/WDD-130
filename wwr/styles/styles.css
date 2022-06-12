@@ -52,7 +52,10 @@
     background-color: --;
     height: 725px;
 }
-
+.logo {
+    max-width: 150px;
+    padding-left: 20px;
+}
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -101,6 +104,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 35px;
+    padding-top: 70px;
 }
 nav a:hover {
     background-color: var(--accent1-color);
