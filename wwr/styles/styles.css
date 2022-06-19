@@ -82,7 +82,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.home-title{
+.home-title {
     font-family: "Gloria Hallelujah", Hallelujah, sans-serif;
     font-size: 2em;
     margin-top: 10px;
@@ -197,6 +197,91 @@ footer .social img {
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
+}
+
+/* page 2 */
+
+.rivers-title {
+    font-family: "Gloria Hallelujah", Hallelujah, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.rivers-blocks img {
+    height: 300px;
+}
+
+
+/* first row */
+.idaho-river {
+    padding: 50px;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+.river-title-idaho {
+    color: var(--accent2-color);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.idaho-text p {
+    color: rgb(236, 232, 232);
+    font-size: 15.2px;
+}
+.idaho-text {
+    padding: 100px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/* Second row */
+.utah-river {
+    padding: 50px;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+}
+.river-title-utah {
+    color: var(--accent2-color);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+.utah-text p {
+    color: rgb(236, 232, 232);
+    font-size: 15.2px;
+}
+.utah-text {
+    padding: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* third row */
+.arizona-river {
+    padding: 50px;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+.river-title-arizona {
+    color: var(--accent2-color);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.arizona-text p {
+    color: rgb(236, 232, 232);
+    font-size: 15.2px;
+}
+.arizona-text {
+    padding: 100px;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 
