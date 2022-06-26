@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+nav a {
+    font-size: 48px;
+}
+
+.nav-logo {
+    max-width: 250px;
+    padding-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#about-us {
+    margin: 200px;
+}
+#about-us-title {
+    text-align: center;
+}
+
+#recipes {
+    margin: 0 auto;
+    text-align: center;
+}
