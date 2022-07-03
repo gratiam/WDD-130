@@ -141,6 +141,7 @@ nav a {
 
 #recipes {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 #recipe-msg {
     color: var(--cream-color);
@@ -153,8 +154,7 @@ nav a {
     display: grid;
     grid-template-columns: 500px 500px;
     grid-template-rows: 300px 20px;
-    text-align: center;
-    margin-left: 250px;
+    justify-content: center;
 }
 #brownie-card img {
     max-height: 100%;
@@ -189,6 +189,5 @@ ul li {
 }
 
 #site-plan-link {
-    text-justify: center;
     color: var(--cream-color)
 }
