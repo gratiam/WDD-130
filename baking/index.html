@@ -10,9 +10,11 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <img class="nav-logo" src="images/logos/Pastry-logo_thumbnail.png">
-            <a href="#recipes">Recipies</a>
+            <div class="nav_text">
+                <a href="index.html">Home</a>
+                <a href="index.html"><img class="nav-logo" src="images/logos/Pastry-logo_thumbnail.png" alt="peerless pastries logo"></a>
+                <a href="#recipes">Recipies</a>
+            </div>
         </nav>
         <div class="hero-title">
             <h1 id="title">Peerless Pastries</h1>
@@ -23,50 +25,58 @@
     <main>
         <div id="about-us">
             <h2 id="about-us-title">About Us</h2>
-            <p>This site is one dedicated to the art of baking, housing recipes with simple instructions.
-
-                The questions that may need answering are "Are these recipes vegan?", 
-                "Are they gluten-free?" and "Are there alternative ingredients?"
-                These questions will be answered at the beginning of each recipe, as the answer may not be consistent.
-        
-                No prior information is required to use this site, however some tools will be necessary.  
-                Expect measuring cups and pans for almost every recipe!
-            </p>
-            <img id="about-us-img1" src="images/chocolate-cupcakes.png" alt="Image of chocolate cupcakes">
-            <img id="about-us-img2" src="images/custard-cupcakes.png" alt="Image of custard cupcakes">
-            <p>The goal of this site is to be easy to use and easy to follow.
-                Unlike others, this site strives to get the food you want from your ingredients to your plate in as little time as possible!
-                Here we try to be as realistic as possible with which recipes will be displayed for use.
-        
-                Every time I wanted to bake something the first thing necessary was a recipe, which sometimes proved difficult to follow or unreliably written.
-        
-                When I needed to make a website the first reliable idea was a site to house recipes for baking, it turned out my own cookbooks just weren’t enough for my cooking needs!</p>
-        </div>
+            <div class="about-us-body">
+                <p id="about-us-para1">This site is one dedicated to the art of baking, housing recipes with simple instructions.
+                    <br><br>
+                    The questions that may need answering are "Are these recipes vegan?", 
+                    "Are they gluten-free?" and "Are there alternative ingredients?"
+                    These questions will be answered at the beginning of each recipe, as the answer may not be consistent.
+                    <br><br>
+                    No prior information is required to use this site, however some tools will be necessary.  
+                    Expect measuring cups and pans for almost every recipe!
+                </p>
+                <img id="about-us-img1" src="images/chocolate-cupcakes.png" alt="Image of chocolate cupcakes">
+                <img id="about-us-img2" src="images/custard-cupcakes.png" alt="Image of custard cupcakes">
+                <p id="about-us-para2">The goal of this site is to be easy to use and easy to follow.
+                    Unlike others, this site strives to get the food you want from your ingredients to your plate in as little time as possible!
+                    Here we try to be as realistic as possible with which recipes will be displayed for use.
+                    <br><br>
+                    Every time I wanted to bake something the first thing necessary was a recipe, which sometimes proved difficult to follow or unreliably written.
+                    <br><br>
+                    When I needed to make a website the first reliable idea was a site to house recipes for baking, it turned out my own cookbooks just weren’t enough for my cooking needs!
+                </p>
+            </div>
         <div id="recipes">
             <h3 id="recipe-msg">&ensp;&ensp;Check out our…</h3>
             <h2 id="recipe-title">Recipes</h2>
-            <div id="cards">
-                <a href="brownies.html"><img src="images/brownies.png" alt="Image of a brownie"></a>
-                <a href="cookies.html"><img src="images/chocolate-chip-cookies1.png" alt="Image of Cookies"></a>
-                <a href="brownies.html">Brownies</a>
-                <a href="cookies.html">Cookies</a>
+            <div id="recipe-cards">
+                <a id="brownie-card" href="brownies.html"><img src="images/brownies.png" alt="Image of a brownie"></a>
+                <a id="cookie-card" href="cookies.html"><img src="images/chocolate-chip-cookies1.png" alt="Image of Cookies"></a>
+                <a id="brownie-text" href="brownies.html">Brownies</a>
+                <a id="cookie-text" href="cookies.html">Cookies</a>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="socials">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/logos/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/logos/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/logos/instagram.png" alt="instagram icon">
-            </a>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">
+                    <img src="images/logos/facebook.png" alt="fb icon">
+                    </a>
+                </li>
+                <li><a href="https://twitter.com" target="_blank">
+                    <img src="images/logos/twitter.png" alt="twitter icon">
+                    </a>
+                </li>
+                <li><a href="https://instagram.com" target="_blank">
+                    <img src="images/logos/instagram.png" alt="instagram icon">
+                    </a>
+                </li>
+                <li><a id="site-plan-link" href="site-plan.html">Site Plan</a></li>
+            </ul>
         </div>
-        <a href="site-plan.html">Site Plan</a>
+        
     </footer>
 </body>
 </html>
