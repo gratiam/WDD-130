@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<h2>Interesting Foods</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Brickle')" id="defaultOpen">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Pumpernickel')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Onion-Pickle')">Tokyo</button>
+</div>
+
+<div id="Brickle" class="tabcontent">
+  <h3>Butter Brickle</h3>
+  <p>Butter Brickle is a chocolate-coated toffee first sold 20 November 1924 by candy manufacturer John G. Woodward Co. 
+    of Council Bluffs, Iowa, and toffee pieces for flavoring ice cream, manufactured by The Fenn Bros. Ice Cream and Candy Co. of Sioux Falls, South Dakota.</p>
+</div>
+
+<div id="Pumpernickel" class="tabcontent">
+  <h3>Pumpernickel</h3>
+  <p>Pumpernickel is a typically heavy, slightly sweet rye bread traditionally made with 
+    sourdough starter and coarsely ground rye. It is sometimes made with a combination of rye flour and whole rye grains.</p> 
+</div>
+
+<div id="Onion-Pickle" class="tabcontent">
+  <h3>Spicy Onion Pickle</h3>
+  <p>Spicy onion pickle is prepared by cutting onions into pieces and rubbing salt over them. 
+    After one day, the excess water is drained and the onions are marinated with other spices for four or five days</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
