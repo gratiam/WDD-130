@@ -8,7 +8,7 @@
     --pink-primary: #C785A8;
     --cream-color: #FEFCFD;
     --yellow-primary: #DABD1C;
-    --pink-pale: #BD8758;
+    --pink-pale: #d89f91;
     --dark-primary-bg: #5D3F24;
 }
 
@@ -167,24 +167,89 @@ nav a {
     grid-column: 1/2;
     grid-row: 2/3;
     font-size: 20px;
-    color: var(--yellow-primary)
+    color: var(--pink-primary)
 }
 #cookie-text {
     grid-column: 2/3;
     grid-row: 2/3;
     font-size: 20px;
-    color: var(--yellow-primary)
+    color: var(--pink-primary)
 }
 #brownie-text:hover, #cookie-text:hover {
-    color: var(--cream-color);
+    color: var(--yellow-primary);
 }
 
-ul {
+/* Brownies page */
+.brownies-page {
+    background-color: var(--pink-pale);
+}
+
+.brownies_main {
+    text-align: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: var(--pink-primary);
+}
+.brownies_main h3 {
+    /* color: var(--cream-color); */
+    text-decoration: underline;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cream-color);
+}
+.brownies_main p {
+    font-size: 18px;
+    font-weight:600;
+}
+#brownies-opening-img {
+    padding-top: 50px;
+}
+#ingredients_div {
+    text-align: center;
+}
+#ingredients {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+}
+#equipment_div {
+    text-align: center;
+    margin-right: 16px;
+}
+#equipment {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+}
+#instructions {
+    padding: 0px 200px 50px 200px;
+    background-color: var(--pink-primary);
+}
+#instruction-text {
+    text-align: justify;
+}
+#instruction-text p {
+    font-weight: 500px
+}
+#instruction-text em {
+    color: white;
+    font-style: normal;
+    font-size: 28px;
+}
+#brownie-close-img {
+    padding: 20px;
+    background-color: var(--pink-pale);
+}
+
+
+/* footer */
+
+.socials ul {
     background-color: var(--pink-primary);
     margin: 0;
     padding: 20px;
 }
-ul li {
+.socials ul li {
     display: inline-block;
 }
 
