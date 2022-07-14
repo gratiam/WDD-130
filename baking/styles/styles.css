@@ -7,9 +7,10 @@
 :root {
     --pink-primary: #C785A8;
     --cream-color: #FEFCFD;
-    --yellow-primary: #DABD1C;
+    --yellow-primary: #cfb776; 
     --pink-pale: #d89585;
     --dark-primary-bg: #5D3F24;
+    /* yellow: #dabd1c */
 }
 
 body {
@@ -67,7 +68,6 @@ nav a {
 .nav_text {
     display: inline-block;
     margin: 0 auto;
-    padding-left: 45px
 }
 
 .hero-title {
@@ -75,16 +75,22 @@ nav a {
     padding-top: 0px;
     text-align: center;
     background-color: var(--dark-primary-bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 .hero-title #title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 10px;
-
-    /* circle background */
-    padding: 50px;
+    font-size: 4em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1;
+    /* circle */
+    width: 250px;
+    /* center */
+    align-self: center;
+    justify-self: center;
+    padding: 70px;
+    padding-top: 75px;
     background-color: var(--pink-primary);
     border: solid var(--cream-color) 5px;
     border-radius: 50%;
@@ -92,6 +98,8 @@ nav a {
 
 
 #hero-img {
+    grid-column: 1/4;
+    grid-row: 1/2;
     width: 100%;
     vertical-align: bottom;
 }
@@ -202,32 +210,45 @@ nav a {
 }
 #ingredients_div {
     text-align: center;
+    margin: 0 150px 25px 150px;
+    background-color: var(--yellow-primary);
 }
 #ingredients {
     display: inline-block;
     text-align: left;
     font-size: 18px;
 }
+#cookie-ingredients {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 102px;
+}
 #equipment_div {
     text-align: center;
-    margin-right: 20px;
+    margin: 0 150px 25px 150px;
+    background-color: var(--yellow-primary);
 }
 #equipment {
     display: inline-block;
     text-align: left;
     font-size: 18px;
+    margin-right: 20px;
 }
-#cookie_ingedients_div {
-    text-align: center;
-    margin-left: 72px;
+#cookie-equipment {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 20px;
 }
 #cookie_equipment_div {
     text-align: center;
     margin-right: 50px;
 }
 #instructions {
-    padding: 0px 200px 50px 200px;
-    background-color: var(--pink-primary);
+    padding: 15px 100px 45px 100px;
+    background-color: var(--yellow-primary);
+    margin: 0 150px 25px 150px;
 }
 #instruction-text {
     text-align: justify;
