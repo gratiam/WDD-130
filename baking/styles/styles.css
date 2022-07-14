@@ -156,21 +156,12 @@ nav a {
     grid-template-rows: 300px 20px;
     justify-content: center;
 }
-#brownie-card img {
-    max-height: 100%;
-}
-#cookie-card img {
+#brownie-card img, #cookie-card img {
     max-height: 100%;
 }
 
-#brownie-text {
+#brownie-text, #cookie-text {
     grid-column: 1/2;
-    grid-row: 2/3;
-    font-size: 20px;
-    color: var(--pink-primary)
-}
-#cookie-text {
-    grid-column: 2/3;
     grid-row: 2/3;
     font-size: 20px;
     color: var(--pink-primary)
@@ -179,29 +170,29 @@ nav a {
     color: var(--yellow-primary);
 }
 
-/* Brownies page */
-.brownies-page {
+/* BROWNIES PAGE */
+.brownies-page, .cookies-page {
     background-color: var(--dark-primary-bg);
 }
 
-.brownies_main {
+.brownies_main, .cookies_main {
     text-align: center;
     margin-left: 18%;
     margin-right: 18%;
     background-color: var(--pink-primary);
 }
-.brownies_main h3 {
+.brownies_main h3, .cookies_main h3 {
     /* color: var(--cream-color); */
     text-decoration: underline;
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     color: var(--cream-color);
 }
-.brownies_main p {
+.brownies_main p, .cookies_main p{
     font-size: 18px;
     font-weight:600;
 }
-#brownies-opening-img {
+#brownies-opening-img, #cookies-opening-img {
     margin-top: 50px;
 }
 #ingredients_div {
@@ -236,7 +227,7 @@ nav a {
     font-style: normal;
     font-size: 28px;
 }
-.brownies_main img {
+.brownies_main img, .cookies_main img {
     padding: 20px;
     background-color: var(--dark-primary-bg);
 }
